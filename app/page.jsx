@@ -1,11 +1,8 @@
 import LogoutButton from "@/components/LogoutButton";
 import { getServerSession } from "next-auth";
-import { authOptions } from "./api/auth/[...nextauth]/route";
 
 const Home = async () => {
-  const session = await getServerSession(authOptions);
-
-  console.log(session);
+  const session = await getServerSession();
 
   return (
     <div>
