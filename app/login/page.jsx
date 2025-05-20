@@ -1,6 +1,5 @@
 "use client";
 
-import LogoutButton from "@/components/LogoutButton";
 import { signIn } from "next-auth/react";
 
 export default function LoginPage() {
@@ -10,8 +9,6 @@ export default function LoginPage() {
       <button onClick={() => signIn("google", { callbackUrl: "/" })}>
         Login with Google
       </button>
-
-      <LogoutButton />
     </div>
   );
 }
