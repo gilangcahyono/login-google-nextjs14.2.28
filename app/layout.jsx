@@ -6,9 +6,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <title>Page Title</title>
+        <title>Page</title>
         <meta
-          name="Page"
+          name="description"
           content="Login Google di NextJS 14.2.28 dengan NextAuth.js"
         />
       </head>
