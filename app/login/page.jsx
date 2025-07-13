@@ -3,10 +3,12 @@
 import { signIn } from "next-auth/react";
 
 export default function LoginPage() {
+  const handleLogin = () => signIn("google", { callbackUrl: "/" });
+
   return (
-    <div style={{ textAlign: "center", marginTop: 100 }}>
-      <h1>Login</h1>
-      <button onClick={() => signIn("google", { callbackUrl: "/" })}>
+    <div className="login-container">
+      {/* <h1>Login</h1> */}
+      <button className="login-button" onClick={handleLogin}>
         Login with Google
       </button>
     </div>
